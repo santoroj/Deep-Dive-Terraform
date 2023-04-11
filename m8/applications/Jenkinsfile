@@ -11,6 +11,7 @@ pipeline {
     environment {
         TF_HOME = tool('terraform')
         TF_INPUT = "0"
+        JOES_TEST = "JOES_TEST"
         TF_IN_AUTOMATION = "TRUE"
         TF_VAR_consul_address = "host.containers.internal"
         TF_LOG = "WARN"
